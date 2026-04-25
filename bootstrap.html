@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Навбар</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Ссылка</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Выпадающий список
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Действие</a></li>
+                            <li><a class="dropdown-item" href="#">Другое действие</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Что-то еще здесь</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Отключенная</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Поиск" aria-label="Поиск">
+                    <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main row">
+        <div class="col-sm-8"> 
+            <h3>Cкачивание аккордеона <span class="badge text-bg-success">Скачивание</span></h3>
+            <div class="spinner-border" role="status"><span class="visually-hidden">Загрузка...</span></div>
+            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0"
+                aria-valuemax="100">
+                <div class="progress-bar" style="width: 75%">75%</div>
+            </div>
+            <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Элемент аккордеона #1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона первого элемента.</strong> Оно отображается по умолчанию, пока плагин
+                        свертывания не добавит соответствующие классы, которые мы используем для стилизации каждого элемента.
+                        Эти классы управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы
+                        можете изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию.
+                        Также стоит отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя
+                        переход ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Элемент аккордеона #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона второго элемента.</strong> По умолчанию он скрыт, пока плагин свертывания не
+                        добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы
+                        управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете
+                        изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит
+                        отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход
+                        ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Элемент аккордеона #3
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Это тело аккордеона третьего элемента.</strong> По умолчанию оно скрыто, пока плагин свертывания
+                        не добавит соответствующие классы, которые мы используем для стилизации каждого элемента. Эти классы
+                        управляют общим внешним видом, а также отображением и скрытием с помощью переходов CSS. Вы можете
+                        изменить все это с помощью собственного CSS или переопределить наши переменные по умолчанию. Также стоит
+                        отметить, что практически любой HTML может быть помещен в <code>.accordion-body</code>, хотя переход
+                        ограничивает переполнение.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="news col-sm-4">Статьи
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="news col-sm-4">Каталог
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8"></div>
+        <div class="news col-sm-4">Новости
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <div class="vertinews">
+        <div class="news">Карта Доставки
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+        <div class="news">О нас
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+        <div class="news">
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Заголовок карточки</h5>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять
+                        основную часть содержимого карты.</p>
+                    <a href="#" class="btn btn-primary">Перейти куда-нибудь</a>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+    <nav class="navbar fixed-bottom bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Дно</a>
+        </div>
+    </nav>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
